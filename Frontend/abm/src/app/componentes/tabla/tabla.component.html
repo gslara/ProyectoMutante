@@ -1,0 +1,46 @@
+<div>
+    <div>
+        &nbsp;
+        <h3>&nbsp;Análisis de mutantes</h3>
+        &nbsp;
+    </div>
+    <td>
+        <form>
+            &nbsp;&nbsp;<button type="button" class="btn btn-secondary btn-lg"
+                (click)="agregar(0)">Agregar</button>&nbsp;
+            <button type="button" class="btn btn-secondary btn-lg" (click)="goStats()">Ver ratio</button>
+        </form>
+    </td>
+    <div>
+        &nbsp;
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">ADN</th>
+                    <th scope="col">Mutación</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of personas">
+                    <td>{{p.id}}</td>
+                    <td>{{p.nombre}}</td>
+                    <td>{{p.apellido}}</td>
+                    <td>{{p.dna}}</td>
+                    <td>{{p.mutacion}}</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-sm" (click)="update(p.id)">Editar</button>
+                        <button type="button" class="btn btn-dark btn-sm" (click)="delete(p.id)">Eliminar</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+</div>

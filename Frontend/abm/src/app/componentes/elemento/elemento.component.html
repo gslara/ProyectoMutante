@@ -1,0 +1,72 @@
+<div>
+    <div>
+        &nbsp;
+        <h4>&nbsp;Datos de la persona</h4>
+        &nbsp;
+    </div>
+    <div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Nombre</span>
+            </div>
+            <input type="text" id="nombre" class="form-control" placeholder="Nombre" aria-label="nombre"
+                aria-describedby="basic-addon1" [(ngModel)]="persona.nombre">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Apellido</span>
+            </div>
+            <input type="text" id="apellido" class="form-control" placeholder="Apellido" aria-label="apellido"
+                aria-describedby="basic-addon1" [(ngModel)]="persona.apellido">
+        </div>
+
+        <label for="basic-url">Cadenas de ADN:</label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Cadena 1</span>
+            </div>
+            <input type="text" id="cadena1" class="form-control" placeholder="Cadena 1" aria-label="cadena1"
+                aria-describedby="basic-addon1" [(ngModel)]="persona.dna[0]">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Cadena 2</span>
+            </div>
+            <input type="text" id="cadena2" class="form-control" placeholder="Cadena 2" aria-label="cadena2"
+                aria-describedby="basic-addon1" [(ngModel)]="persona.dna[1]">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Cadena 3</span>
+            </div>
+            <input type="text" id="cadena3" class="form-control" placeholder="Cadena 3" aria-label="cadena3"
+                aria-describedby="basic-addon1" [(ngModel)]="persona.dna[2]">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Cadena 4</span>
+            </div>
+            <input type="text" id="cadena4" class="form-control" placeholder="Cadena 4" aria-label="cadena4"
+                aria-describedby="basic-addon1" [(ngModel)]="persona.dna[3]">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Cadena 5</span>
+            </div>
+            <input type="text" id="cadena5" class="form-control" placeholder="Cadena 5" aria-label="cadena5"
+                aria-describedby="basic-addon1" [(ngModel)]="persona.dna[4]">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Cadena 6</span>
+            </div>
+            <input type="text" id="cadena6" class="form-control" placeholder="Cadena 6" aria-label="cadena6"
+                aria-describedby="basic-addon1" [(ngModel)]="persona.dna[5]">
+        </div>
+
+        &nbsp;&nbsp;
+        <button type="button" class="btn btn-success" (click)="save()">Guardar</button>&nbsp;
+        <button type="button" class="btn btn-dark" (click)="cancelar()">Cancelar</button>
+    </div>
+</div>
